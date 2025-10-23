@@ -43,7 +43,7 @@ button:not([type="submit"]):hover {
     transform: scale(1.02);
 }
 
-@keyframes slideIn {
+@keyframes mov {
     0% {
         opacity: 0;
         transform: translateY(20px);
@@ -55,7 +55,7 @@ button:not([type="submit"]):hover {
 }
 
 .conteudo-principal {
-    animation: slideIn 0.8s ease-out forwards;
+    animation: mov 0.8s ease-out forwards;
 }
 
 main section img, .td2 img, .td4 img {
@@ -72,3 +72,5 @@ button[type="submit"]:hover {
     background: #a80033;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
+
+  /*Cainã Sandes, RM: 568571*/
