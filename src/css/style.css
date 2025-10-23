@@ -1,3 +1,5 @@
+@import url("efeitos.css");
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -116,5 +118,6 @@ footer {
   text-align: center; 
   margin: 20px 0;
 }
+
 
 /*Cainã Sandes, RM: 568571*/
