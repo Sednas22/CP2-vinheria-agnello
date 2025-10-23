@@ -1,0 +1,74 @@
+nav ul li a, button, input, textarea, img {
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a {
+    position: relative;
+}
+nav ul li a::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    position: absolute;
+    bottom: -5px; 
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 1px;
+    background: #5a0a0a;
+    margin: 8px auto 20px auto;
+    opacity: 0.7;
+}
+
+nav ul li a:hover::before {
+    width: 100%;
+}
+
+input:focus, textarea:focus {
+    border-color: #a80033;
+    box-shadow: 0 0 8px rgba(168, 0, 51, 0.4);
+    outline: none; 
+}
+
+button:not([type="submit"]):hover {
+    background: #a80033; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.conteudo-principal {
+    animation: slideIn 0.8s ease-out forwards;
+}
+
+main section img, .td2 img, .td4 img {
+    transform: rotate(1deg);
+    border: 5px solid white;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+main section img:hover, .td2 img:hover, .td4 img:hover {
+    transform: rotate(0deg) scale(1.01);
+}
+
+button[type="submit"]:hover {
+    background: #a80033;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
