@@ -35,37 +35,53 @@ O trabalho reforça os conceitos de estruturação de páginas HTML, aplicação
 <h3>Desenvolvimento:</h3> <p>
 O site foi construído com 5 páginas (index + 4 adicionais), organizadas em pastas específicas para código e imagens, e 2 arquivos css (styles.css e efeitos.css), organizados em mesma pasta e importação dentro de html e css.<br>
 Foram aplicados:
+  
 <ul>
   
-  <li>pseudo-classes</li><ul>
-    <li>aaa</li>
+  <li><b>Pseudo-classes</b></li>
+  <ul>
+    <li><code>nav ul li a:hover::before</code> – cria um sublinhado animado ao passar o mouse nos links do menu;</li>
+    <li><code>input:focus</code> e <code>textarea:focus</code> – destacam os campos de formulário ativos, mudando a borda e adicionando sombra;</li>
+    <li><code>button:not([type="submit"]):hover</code> e <code>button[type="submit"]:hover</code> – aplicam mudança de cor, sombra e leve aumento no botão ao passar o mouse.</li>
   </ul>
   
-  <li>pseudo-elementos</li><ul>
-    <li>bbb</li>
+  <li><b>Pseudo-elementos</b></li>
+  <ul>
+    <li><code>nav ul li a::before</code> – adiciona uma linha sob os links, que cresce com o hover;</li>
+    <li><code>h2::after</code> – insere uma linha decorativa abaixo dos títulos principais, reforçando a hierarquia visual.</li>
   </ul>
   
-  <li>keyframes</li><ul>
-    <li>ccc</li>
+  <li><b>Keyframes</b></li>
+  <ul>
+    <li><code>@keyframes mov</code> – define uma animação suave de entrada dos elementos principais, fazendo o conteúdo surgir com translação vertical;</li>
+    <li>Aplicado em <code>.conteudo-principal</code>, que é animado assim que a página carrega.</li>
   </ul>
   
-  <li>transformações</li><ul>
-    <li>ddd</li>
+  <li><b>Transformações</b></li>
+  <ul>
+    <li><code>transform: rotate(1deg);</code> – dá leve inclinação às imagens para criar um efeito visual mais dinâmico;</li>
+    <li><code>transform: rotate(0deg) scale(1.01);</code> – usado no hover das imagens, corrigindo a rotação e aumentando levemente o tamanho;</li>
+    <li><code>transform: scale(1.02);</code> – aumenta sutilmente o botão ao passar o mouse, simulando resposta tátil.</li>
   </ul>
   
-  <li>transições</li><ul>
-    <li>eee</li>
+  <li><b>Transições</b></li>
+  <ul>
+    <li><code>transition: all 0.3s ease-in-out;</code> – aplicada em links, botões, inputs, imagens e áreas de texto, suavizando todas as mudanças de estado (hover, foco, etc.);</li>
+    <li><code>transition: width 0.3s ease;</code> – faz a linha sob os links crescer de forma fluida ao interagir com o menu.</li>
   </ul>
   
 </ul>
+  
+</ul>
 <p>
-A navegação é funcional entre todas as páginas, o código está indentado e organizado, visando clareza e manutenção.
+A estilização é funcional entre todas as páginas, o código está indentado e organizado, visando clareza e manutenção.
 </p>
 
 <h3>Publicação:</h3> <p>
 O projeto foi publicado no GitHub Pages para visualização online. <br>
-🔗 Link: 
+🔗 Link: https://sednas22.github.io/CP2-vinheria-agnello/
 </p>
+
 
 
 
